@@ -68,20 +68,20 @@ In order to use the `OMG.jar` in your program, you need to run the jar file via 
 Here there some examples of how to run OMG using the command line:
 
 **Generating molecules**
-	- Generate molecules for the elemental composition C6H6
-	```bash
-	java -jar OMG.jar -ec C6H6
-	```
-	- Generate molecules for the elemental composition C6H6 and store them in out_C6H6.sdf
-	```bash
-	java -jar OMG.jar -ec C6H6 -o out_C6H6.sdf
-	```
+- Generate molecules for the elemental composition C6H6
+```bash
+java -jar OMG.jar -ec C6H6
+```
+- Generate molecules for the elemental composition C6H6 and store them in out_C6H6.sdf
+```bash
+java -jar OMG.jar -ec C6H6 -o out_C6H6.sdf
+```
 
 **Generating molecules with prescribed substructure(s)**
-	- Generate molecules for the elemental composition C2H5NO2 (glycine) using the prescribed substructure in fragment_CO2.sdf
-	```bash
-	java -jar OMG.jar -ec C2H5NO2 -fr fragment_CO2.sdf
-	```
+- Generate molecules for the elemental composition C2H5NO2 (glycine) using the prescribed substructure in fragment_CO2.sdf
+```bash
+java -jar OMG.jar -ec C2H5NO2 -fr fragment_CO2.sdf
+```
 
 ## Source Organization
 This main sources are organized as follows:
