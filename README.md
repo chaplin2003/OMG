@@ -22,7 +22,8 @@ By default, we can just execute `ant` command under the project root directory t
 ```bash
 ant init
 ```
-  - This command will create temporary folders `dist` and `build`. `build` is the working directory while building process. `dist` is used for storing runnable `OMG.jar`.
+- This command will create temporary folders `dist` and `build`.
+- `build` is the working directory while building process. `dist` is used for storing runnable `OMG.jar`.
 
 2. Build
 ```bash
@@ -30,10 +31,10 @@ ant build
 ```
 - We will build successfully if the `Prerequisites` are satisfied.
 - This command will do the following:
-* Check the OS version and OS architecture.
-* Unpack `cdk` libraries and copy thirdparty libraries to the `build` folder.
-* Compile the nauty library according to the OS version and architecture.
-* Compile OMG java files.
+	* Check the OS version and OS architecture.
+	* Unpack `cdk` libraries and copy thirdparty libraries to the `build` folder.
+	* Compile the nauty library according to the OS version and architecture.
+	* Compile OMG java files.
 - The mid-generated files during above steps are in `build` folder.
 
 3. Dist
@@ -66,24 +67,26 @@ In order to use the `OMG.jar` in your program, you need to run the jar file via 
 
 Here there some examples of how to run OMG using the command line:
 1. Generating molecules
-- Generate molecules for the elemental composition C6H6
-```bash
-java -jar OMG.jar -ec C6H6
-```
-- Generate molecules for the elemental composition C6H6 and store them in out_C6H6.sdf
-```bash
-java -jar OMG.jar -ec C6H6 -o out_C6H6.sdf
-```
+	- Generate molecules for the elemental composition C6H6
+	```bash
+	java -jar OMG.jar -ec C6H6
+	```
+	- Generate molecules for the elemental composition C6H6 and store them in out_C6H6.sdf
+	```bash
+	java -jar OMG.jar -ec C6H6 -o out_C6H6.sdf
+	```
 
 2. Generating molecules with prescribed substructure(s)
-- Generate molecules for the elemental composition C2H5NO2 (glycine) using the prescribed substructure in fragment_CO2.sdf
-```bash
-java -jar OMG.jar -ec C2H5NO2 -fr fragment_CO2.sdf
-```
+	- Generate molecules for the elemental composition C2H5NO2 (glycine) using the prescribed substructure in fragment_CO2.sdf
+	```bash
+	java -jar OMG.jar -ec C2H5NO2 -fr fragment_CO2.sdf
+	```
 
 ## Source Organization
 This main sources are organized as follows:
+```
 `lib`: Thirdparty libraries, including licenses.
 `src`: Source folder for OMG.
 `testdata`: Some sample outputs via newly built OMG.jar.
 `build.xml`: Ant script for building OMG.jar.
+```
