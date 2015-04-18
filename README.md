@@ -18,14 +18,14 @@ To build the `OMG.jar` you will need the following:
 An ant build script is provided to generate the `OMG.jar`. Following ant tasks are available.
 By default, we can just execute `ant` command under the project root directory to generate the `OMG.jar`.
 
-1. Init
+**Init**
 ```bash
 ant init
 ```
 - This command will create temporary folders `dist` and `build`.
 - `build` is the working directory while building process. `dist` is used for storing runnable `OMG.jar`.
 
-2. Build
+**Build**
 ```bash
 ant build
 ```
@@ -37,20 +37,20 @@ ant build
 	* Compile OMG java files.
 - The mid-generated files during above steps are in `build` folder.
 
-3. Dist
+**Dist**
 ```bash
 ant dist
 ```
 - This command depends on the **build** task.
 - A runnable `OMG.jar` is packed to `dist` folder. We can use it for verifying then.
 
-4. Clean
+**Clean**
 ```bash
 ant clean
 ```
 - This command will remove the `build` and `dist` folder.
 
-5. Help
+**Help**
 ```bash
 ant help
 ```
@@ -61,12 +61,13 @@ In order to use the `OMG.jar` in your program, you need to run the jar file via 
 ```
 -ec:  elemental composition of the molecules to be generated.
 -o:   SDF file where to store the molecules.  
--fr:  SDF file containing prescribed one or multiple substructures. In the case
-	    of multiple substructures, they have to be non-overlapping. 
+-fr:  SDF file containing prescribed one or multiple substructures.
+      In the case of multiple substructures, they have to be non-overlapping. 
 ```
 
 Here there some examples of how to run OMG using the command line:
-1. Generating molecules
+
+**Generating molecules**
 	- Generate molecules for the elemental composition C6H6
 	```bash
 	java -jar OMG.jar -ec C6H6
@@ -76,7 +77,7 @@ Here there some examples of how to run OMG using the command line:
 	java -jar OMG.jar -ec C6H6 -o out_C6H6.sdf
 	```
 
-2. Generating molecules with prescribed substructure(s)
+**Generating molecules with prescribed substructure(s)**
 	- Generate molecules for the elemental composition C2H5NO2 (glycine) using the prescribed substructure in fragment_CO2.sdf
 	```bash
 	java -jar OMG.jar -ec C2H5NO2 -fr fragment_CO2.sdf
@@ -85,8 +86,8 @@ Here there some examples of how to run OMG using the command line:
 ## Source Organization
 This main sources are organized as follows:
 ```
-`lib`: Thirdparty libraries, including licenses.
-`src`: Source folder for OMG.
-`testdata`: Some sample outputs via newly built OMG.jar.
-`build.xml`: Ant script for building OMG.jar.
+lib: Thirdparty libraries, including licenses.
+src: Source folder for OMG.
+testdata: Some sample outputs via newly built OMG.jar.
+build.xml: Ant script for building OMG.jar.
 ```
