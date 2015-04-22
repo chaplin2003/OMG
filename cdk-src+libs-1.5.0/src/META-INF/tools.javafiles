@@ -1,0 +1,16 @@
+net/sf/cdk/tools/MakeJavafilesFiles.java
+net/sf/cdk/tools/bibtex/BibTeXMLFile.java
+net/sf/cdk/tools/bibtex/BibTeXMLEntry.java
+net/sf/cdk/tools/copyright/CheckCopyrightStatements.java
+net/sf/cdk/tools/doclets/CDKThreadSafeTaglet.java
+net/sf/cdk/tools/doclets/CDKBugTaglet.java
+net/sf/cdk/tools/doclets/CDKCiteTaglet.java
+net/sf/cdk/tools/doclets/CDKInChITaglet.java
+net/sf/cdk/tools/doclets/CDKThreadNonSafeTaglet.java
+net/sf/cdk/tools/doclets/CDKDictRefTaglet.java
+net/sf/cdk/tools/doclets/CDKGitTaglet.java
+net/sf/cdk/tools/doclets/CDKModuleTaglet.java
+net/sf/cdk/tools/checkdoctest/MissingGithashTagletTest.java
+net/sf/cdk/tools/checkdoctest/IncorrectBugNumberTagletTest.java
+net/sf/cdk/tools/checkdoctest/MissingModuleTagletTest.java
+net/sf/cdk/tools/coverage/CheckModuleCoverage.java
